@@ -1,35 +1,26 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import Course from './Course';
+import Footer from './Footer';
+import Navbar from './Navbar';
+/* import html from './assets/card1.png';
+import css from './assets/card2.png';
+import js from './assets/card3.png'; */
+import List from './List';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+     {/* <Navbar />
+     <Course />
+
+     <Footer /> */}
+
+     {/* <Course name="HTML" price="100" image={html} rate={5} show={true}/>
+     <Course name="CSS" price="200" image={css} show={true}/>
+     <Course name="js" price="150" image={js} rate={4} show={true}/> */}
+     <List />
     </>
-  )
+  );
 }
 
 export default App

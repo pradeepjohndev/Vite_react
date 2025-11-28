@@ -1,0 +1,23 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.card{
+    background-color: red;
+    max-width: 200px;
+    border: 1px solid blue;
+    border-radius: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+    padding: 30px;
+    text-align: center;
+    display: inline-block;
+    
+}
+
+.card img{
+    width: 130px;
+    margin: auto;
+}
