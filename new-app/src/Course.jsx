@@ -11,6 +11,8 @@ function Course(props){
         console.log("purchase", props.name , "with discount" , discount)
     }
 
+    let purchased = false;
+
 /*  if(props.show){ */
     return(
         props.name && <div className="card"/* style={style} */>
@@ -19,6 +21,7 @@ function Course(props){
         <p>{props.price}</p>
         <span>{props.rate}</span>
         <button onClick={()=>buy(20)}>Buy</button>
+        <p>{purchased ? "already purchased" : "git it now"}</p>
     </div>
 )
 /* }
